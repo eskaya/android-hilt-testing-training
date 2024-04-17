@@ -35,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -56,15 +60,28 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
 
+    implementation (libs.kotlinx.coroutines.core)
+    implementation (libs.kotlinx.coroutines.android)
 
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    implementation (libs.androidx.lifecycle.extensions)
+    implementation (libs.androidx.lifecycle.livedata.ktx)
+    implementation (libs.androidx.lifecycle.runtime)
+    implementation (libs.androidx.lifecycle.runtime.ktx)
+    implementation (libs.androidx.activity.ktx)
+    implementation (libs.androidx.room.runtime)
+   // ksp (libs.androidx.room.compiler)
+    implementation (libs.androidx.room.ktx)
+  //  ksp(libs.kotlinx.metadata.jvm)
 
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.androidx.navigation.fragment.ktx)
+    implementation (libs.androidx.navigation.ui.ktx)
+    implementation (libs.glide)
 
-
-
-
-
-
-
-
+    //kapt 'com.github.bumptech.glide:compiler:4.13.2'
+    // ksp (libs.ksp)
+    implementation (libs.kotlin.bom)
 
 }
