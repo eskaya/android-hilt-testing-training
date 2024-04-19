@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidHiltTestingTraining</string>
+    <string name="floatActionContentDescription_saveNewArtButton">Save New Art Button</string>
 </resources>
