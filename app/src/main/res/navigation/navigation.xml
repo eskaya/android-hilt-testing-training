@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/savedArtListFragment">
+
+    <fragment
+        android:id="@+id/savedArtListFragment"
+        android:name="com.esrakaya.androidhilttestingtraining.view.SavedArtListFragment"
+        android:label="SavedArtListFragment" >
+        <action
+            android:id="@+id/action_savedArtListFragment_to_addArtFragment"
+            app:destination="@id/addArtFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addArtFragment"
+        android:name="com.esrakaya.androidhilttestingtraining.view.AddArtFragment"
+        android:label="AddArtFragment" >
+        <action
+            android:id="@+id/action_addArtFragment_to_imageApiFragment"
+            app:destination="@id/imageApiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageApiFragment"
+        android:name="com.esrakaya.androidhilttestingtraining.view.ImageApiFragment"
+        android:label="ImageApiFragment" />
+</navigation>
