@@ -1,10 +1,11 @@
-package com.esrakaya.androidhilttestingtraining
+package com.esrakaya.androidhilttestingtraining.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.esrakaya.androidhilttestingtraining.R
 import com.esrakaya.androidhilttestingtraining.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
