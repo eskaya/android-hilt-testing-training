@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvArtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Arts Name"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvArt"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="6dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtName">
+
+            <ImageView
+                android:id="@+id/ivArt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/art"
+                android:scaleType="centerCrop"
+                android:src="@drawable/art" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvArtArtistName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Art Artist Name"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cvArt"
+            app:layout_constraintTop_toTopOf="@+id/cvArt" />
+
+        <TextView
+            android:id="@+id/tvArtConstructionDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Construction Date"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/tvArtArtistName"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtArtistName" />
+
+        <ImageView
+            android:id="@+id/ivStar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_star"
+            app:layout_constraintStart_toStartOf="@+id/tvArtConstructionDate"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtConstructionDate" />
+
+        <TextView
+            android:id="@+id/tvStarPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="4.9"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivStar"
+            app:layout_constraintStart_toEndOf="@+id/ivStar"
+            app:layout_constraintTop_toTopOf="@+id/ivStar" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtName">
+
+            <TextView
+                android:id="@+id/textViewBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Buy Ticket"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
