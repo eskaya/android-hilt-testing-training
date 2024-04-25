@@ -2,4 +2,9 @@
     <string name="app_name">AndroidHiltTestingTraining</string>
     <string name="floatActionContentDescription_saveNewArtButton">Save New Art Button</string>
     <string name="art">Art</string>
+    <string name="searc_result_arts_image">Searc Result Arts Image</string>
+    <string name="addArtPage_artNameHint">Art Name</string>
+    <string name="addArtPage_artArtistNameHint">Art Artist</string>
+    <string name="addArtPage_artYearHint">Art Year</string>
+    <string name="addArtPage_saveButton">Save</string>
 </resources>
