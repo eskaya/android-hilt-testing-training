@@ -22,7 +22,7 @@ class AddArtFragment : Fragment(R.layout.fragment_add_art) {
             override fun handleOnBackPressed() {
                 findNavController().popBackStack()
             }
-
         }
+        requireActivity().onBackPressedDispatcher.addCallback(callback)
     }
 }
