@@ -1,7 +1,7 @@
-package com.esrakaya.androidhilttestingtraining.api
+package com.esrakaya.androidhilttestingtraining.data
 
 import com.esrakaya.androidhilttestingtraining.model.ImageResponse
-import com.esrakaya.androidhilttestingtraining.util.Const.API_KEY
+import com.esrakaya.androidhilttestingtraining.util.Constants.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
