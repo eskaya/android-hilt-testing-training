@@ -12,7 +12,7 @@ interface ArtRepositoryInterface {
     suspend fun deleteArt(art: Art)
 
     fun getArt(): LiveData<List<Art>>
-    
+
     //retrofit test için, artık dönen veriler bir rResource tipinin içerisinde olacak
     suspend fun searchImage(key: String): Resource<ImageResponse>
 
